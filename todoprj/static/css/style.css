@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.homepage{
+    background-color: #5c49d8;
+    min-height: 100vh;
+    max-height: 200vh;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #5c49d8;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color:rgb(180, 180, 180) ;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.img:nth-child(2) {
+    /* background-color: #1e8fffc7; */
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    width: 13%;
+    animation: anim1 8s ease-in-out infinite;
+}
+
+@keyframes anim1 {
+    0%,100% {
+        top: 10%;
+    }
+    40% {
+        top: 20%;
+    }
+}
+
+.img:nth-child(3) {
+    /* background-color: #1e8fffc7; */
+    position: absolute;
+    top: 35%;
+    right:auto;
+    width: 13%;
+    animation: anim2 9s ease-in-out infinite;
+}
+
+@keyframes anim2 {
+    0%,100% {
+        top: 35%;
+    }
+    40% {
+        top: 25%;
+    }
+} 
+
+
+.blue{
+    background-color: #1e8fffc7;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -9999;
+}
+
+.maincontent{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    background-attachment: scroll;
+}
+
+.ctn {
+    margin-top: 30px;
+}
